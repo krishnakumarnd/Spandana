@@ -1,0 +1,91 @@
+Clone
+
+krishnakumar.nd@Kishna-nd MINGW64 /e/Test_Git
+$ git clone https://github.com/krishnakumarnd/Spandana.git
+Cloning into 'Spandana'...
+remote: Enumerating objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 3
+Unpacking objects: 100% (3/3), done.
+
+
+---------------------------------------------------------------------------------------
+
+Pull and Push Commands
+
+Test@DESKTOP-3CC8R7D MINGW64 /d/Energous_test_New/UWP-UI-APP-Energous (energous_test)
+$ git status
+On branch energous_test
+Your branch is up to date with 'origin/energous_test'.
+
+nothing to commit, working tree clean
+
+Test@DESKTOP-3CC8R7D MINGW64 /d/Energous_test_New/UWP-UI-APP-Energous (energous_test)
+$ git pull origin energous_test
+From git.globaledgesoft.com:root/UWP-UI-APP-Energous
+ * branch            energous_test -> FETCH_HEAD
+Already up to date.
+
+Test@DESKTOP-3CC8R7D MINGW64 /d/Energous_test_New/UWP-UI-APP-Energous (energous_test)
+$ git status
+On branch energous_test
+Your branch is up to date with 'origin/energous_test'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   WattUpApp/Styles/Style.xaml
+        modified:   WattUpApp/View/RxADC.xaml
+        modified:   WattUpApp/View/RxAdcScalingPage.xaml
+        modified:   WattUpApp/View/RxDashboardPage.xaml
+        modified:   WattUpApp/View/RxDashboardPage.xaml.cs
+        modified:   WattUpApp/View/RxDebugPage.xaml
+        modified:   WattUpApp/View/RxMainPage.xaml
+        modified:   WattUpApp/View/RxThresholdPage.xaml
+        modified:   WattUpApp/View/RxThresholdPage.xaml.cs
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Test@DESKTOP-3CC8R7D MINGW64 /d/Energous_test_New/UWP-UI-APP-Energous (energous_test)
+$ git add .
+
+Test@DESKTOP-3CC8R7D MINGW64 /d/Energous_test_New/UWP-UI-APP-Energous (energous_test)
+$ git status
+On branch energous_test
+Your branch is up to date with 'origin/energous_test'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   WattUpApp/Styles/Style.xaml
+        modified:   WattUpApp/View/RxADC.xaml
+        modified:   WattUpApp/View/RxAdcScalingPage.xaml
+        modified:   WattUpApp/View/RxDashboardPage.xaml
+        modified:   WattUpApp/View/RxDashboardPage.xaml.cs
+        modified:   WattUpApp/View/RxDebugPage.xaml
+        modified:   WattUpApp/View/RxMainPage.xaml
+        modified:   WattUpApp/View/RxThresholdPage.xaml
+        modified:   WattUpApp/View/RxThresholdPage.xaml.cs
+
+
+Test@DESKTOP-3CC8R7D MINGW64 /d/Energous_test_New/UWP-UI-APP-Energous (energous_test)
+$ git commit -m "Fixed screen jumping issue"
+[energous_test 506444f] Fixed screen jumping issue
+ 9 files changed, 166 insertions(+), 89 deletions(-)
+ rewrite WattUpApp/View/RxDashboardPage.xaml (75%)
+
+Test@DESKTOP-3CC8R7D MINGW64 /d/Energous_test_New/UWP-UI-APP-Energous (energous_test)
+$ git push origin energous_test
+Enumerating objects: 26, done.
+Counting objects: 100% (26/26), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (14/14), 4.68 KiB | 1.17 MiB/s, done.
+Total 14 (delta 11), reused 0 (delta 0)
+remote:
+remote: View merge request for energous_test:
+remote:   https://git.globaledgesoft.com/root/UWP-UI-APP-Energous/merge_requests/4
+remote:
+To git.globaledgesoft.com:root/UWP-UI-APP-Energous.git
+   e986a78..506444f  energous_test -> energous_test
+
